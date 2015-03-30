@@ -58,12 +58,22 @@ def choice1():
     messagebox.showinfo("Choice 2", "While you are looking at the equipment, trying to determine if there's anything wrong with you, a bloodcurdling scream of pain eminates from the glass door at the end of your room.")
     messagebox.showinfo("Choice 2", "Looking down the length of your body at the door, you see several doctors and nurses race into a similar room down the hallway, as a twitching, burned man falls to the floor.")
     messagebox.showinfo("Choice 2", "Curious, you watch the doctors lifting the man back into his bed after administering a muscle relaxant. Then you realize that the icon on his door reads I.C.U.")
-    messagebox.showinfo("Choice 2", "Panic rising in your throat, you turn to your door and see to your horror the letters, '.U.C.I.' No longer allowing the scream to stay in your throat, you scream, and scream, and scream. Then out of the blue, a cold sensation enters you body through the arm and you I.V., almost instantly you black out.")
+    messagebox.showinfo("Choice 2", "Panic rising in your throat, you turn to your door and see to your horror the letters, '.U.C.I.' No longer allowing the scream to stay in your throat, you scream, and scream, and scream. Then out of the blue, a cold sensation enters you body through the arm and your I.V., almost instantly you black out.")
     messagebox.showinfo("Choice 2", "When you wake up next, there are two people standing over you, you recognize Zinoviya, but the man next to her is unfamiliar")
-    messagebox.showinfo("Choice 2", "Hello, "name", how are you feeling?")
+    messagebox.showinfo("Choice 2", "Hello, "+name+", how are you feeling?")
     messagebox.showinfo("Choice 2", "Angry.")
-    messagebox.showinfo("Choice 2", "This time the odd man replies, I am sorry, I do not approve of Administration's methods either, sometimes
-    choice = simpledialog.askstring("Choose Wisely","You have a choice to pick: 1 or 2. If you pick 1, you choose to Command the stealth unit; if you pick 2, you chose to NOT command the stealth unit.").strip().lower()[0]
+    messagebox.showinfo("Choice 2", "This time the odd man replies, I am sorry, I do not approve of Administration's methods either, sometimes. I was told that you were willing to join our growing army?")
+    messagebox.showinfo("Choice 2", "Yeah.")
+    messagebox.showinfo("Choice 2", "Then, in that case I am here to describe to you what the conversion process entails. We, will be turning you into a completely different subspecies of human, Homo Superior. We have three main powers, telepathy, teleportation, and telekinesis. But, as you may be worried about...")
+    messagebox.showinfo("Choice 2", "It's NOT painful. Zinoviya interrupts.")
+    messagebox.showinfo("Choice 2", "Will you consent to this procedure?")
+    messagebox.showinfo("Choice 2", "Well, I already told her yes.")
+    messagebox.showinfo("Choice 2", "Good, but I may want to warn you, some temporary memory loss can happen as a result; at some point in the future, any point, you will forget everything that you don't need to remember, you will remeber the layout of this base, you training, and the Administration Hierarchy, but you will forget everything else. When that does happen, come find Zinoviya, and your training will be complete.")
+    messagebox.showinfo("Choice 2", "Okay, Doc.")
+    messagebox.showinfo("Choice 2", "As the cold fluid again enters your body Zinoviya calls out one last time, 'Goodnight, Sweet Prince.'")
+    messagebox.showinfo("Choice 2", "Suddenly you are in another room, sitting at a chair in front of a HUGE desk. Behind it, is a man who you, oddly, recognize. He is in the middle of talking...")
+    messagebox.showinfo("Choice 2", "Will you command the Stealth Unit, or you Current unit? The Stealth Unit will be sneaking into the base and sabotaging the enemies response capabilities, if you choose to take command of your Current Unit, you will be the leader of 50 Infantrymen.")
+    choice = simpledialog.askstring("Choose Wisely","You have a choice to pick: 1 or 2. If you pick 1, you choose to command the Stealth Unit; if you pick 2, you chose to command your Current Unit.").strip().lower()[0]
     if choice == "1":
         stealth()
     elif choice == "2":
