@@ -39,6 +39,7 @@ def intro():
     else:
         intro()
 def choice1():
+    """Second function called, develops the story further, and presents choice of unit command to player"""
     messagebox.showinfo("Choice 2", "Well, I don't know Zinoviya.....")
     messagebox.showinfo("Choice 2", "Oh, come on, you complain just as loudly as I do! You just gotta join! Finally put all of that attitude of yours to the test.")
     messagebox.showinfo("Choice 2", "Well....... HHHMMM........ Sure, I'll join, I will do whatever you need me to do.")
@@ -52,6 +53,16 @@ def choice1():
     messagebox.showinfo("Choice 2", "Honey, I made a promise to help a friend with something, so if you see Zinoviya come around looking for me, just go ahead and tell her where I am.")
     messagebox.showinfo("Choice 2", "Okay "+name+". I can do that.")
     messagebox.showinfo("Choice 2", "You walk into the bedroom, flop down on the bed, and your eyes are about to close when suddenly you feel a WHOOSH of wind and a needle jabs into your kneck, and then you fall completely asleep.")
+    messagebox.showinfo("Choice 2", "The next thing you know, you are on a bed, strapped down, and unable to move.")
+    messagebox.showinfo("Choice 2", "Senses on high alert, you lift you head up and look around. You are in what looks like a normal shared hospital room, 2 beds, X-ray machines, portable CAT Scan machine, heart monitor, and the like.")
+    messagebox.showinfo("Choice 2", "While you are looking at the equipment, trying to determine if there's anything wrong with you, a bloodcurdling scream of pain eminates from the glass door at the end of your room.")
+    messagebox.showinfo("Choice 2", "Looking down the length of your body at the door, you see several doctors and nurses race into a similar room down the hallway, as a twitching, burned man falls to the floor.")
+    messagebox.showinfo("Choice 2", "Curious, you watch the doctors lifting the man back into his bed after administering a muscle relaxant. Then you realize that the icon on his door reads I.C.U.")
+    messagebox.showinfo("Choice 2", "Panic rising in your throat, you turn to your door and see to your horror the letters, '.U.C.I.' No longer allowing the scream to stay in your throat, you scream, and scream, and scream. Then out of the blue, a cold sensation enters you body through the arm and you I.V., almost instantly you black out.")
+    messagebox.showinfo("Choice 2", "When you wake up next, there are two people standing over you, you recognize Zinoviya, but the man next to her is unfamiliar")
+    messagebox.showinfo("Choice 2", "Hello, "name", how are you feeling?")
+    messagebox.showinfo("Choice 2", "Angry.")
+    messagebox.showinfo("Choice 2", "This time the odd man replies, I am sorry, I do not approve of Administration's methods either, sometimes
     choice = simpledialog.askstring("Choose Wisely","You have a choice to pick: 1 or 2. If you pick 1, you choose to Command the stealth unit; if you pick 2, you chose to NOT command the stealth unit.").strip().lower()[0]
     if choice == "1":
         stealth()
