@@ -3,7 +3,6 @@
 # Description: starter code for the Choose Your
 # Own Adventure Project
 
-#Import Statements
 from tkinter import *
 import tkinter.simpledialog
 import tkinter.messagebox
@@ -11,6 +10,7 @@ import tkinter.messagebox
 root = Tk()
 w = Label(root, text="Choose Your Own Adventure")
 w.pack()
+
 name = simpledialog.askstring("Name?","What's your name?")
 ################ Ken's Functions #####################
 def intro():
@@ -83,14 +83,41 @@ def stealth1():
     messagebox.showinfo("Choice 3", "Okay, thank you for your dedication to help serve the cause.")
     messagebox.showinfo("Choice 3", "On the way out you send out a telepathic call to your team members, informing them of a meeting that you would like to hold tomorrow morning, really early, so that you can get to know all of you team members before training starts.")
     messagebox.showinfo("Choice 3", "")
+
     choice = simpledialog.askstring("Choose Wisely","You have a choice to pick: 1 or 2. If you pick 1, you choose to command the Stealth Unit; if you pick 2, you chose to command your Current Unit.").strip().lower()[0]
     stealth2(choice)
 
 ################ AJ's Functions #####################
 
+def choice1():
+    choice = simpledialog.askinteger("Choose wisely",
+                                     "You must make a decision for you and your unit.  Now you must choose mystery 1 or mystery 2?")
+    if (choice == 1):
+        messagebox.showinfo("Move on the President",
+                            "You choose to carry out your mission to kill the president no matter what happens. You Win. THE END")
 
+    elif (choice == 2):
+        messagebox.showinfo("Total Chaos",
+                            "You choose to cause as much destruction as you possilby can before... You Die. THE END")
+    else:
+        choice1()
+
+def choice2():
+    choice = simpledialog.askinteger("Choose wisely",
+                                     "You must make a decision for you and your unit.  Now you must choose tomb 1 or tomb 2.")
+    if (choice == 1):
+        messagebox.showinfo("Run Away",
+                            "You think the situation is hopeless and you tell your unit to RUN!!! You ALL Die. THE END")
+
+    elif (choice == 2):
+        messagebox.showinfo("Split Up",
+                            "You tell your unit to split up into muitiple groups in a last min effort to" + \
+                            " become unpredicable. YOU Live. THE END")
+    else:
+        choice2()
 ################ Quinn's Functions #####################
 
 
 ################ Main #####################
+intro()
 root.destroy()
