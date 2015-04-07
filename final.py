@@ -79,13 +79,12 @@ def choice1():
         choice1()
 def stealth1():
     """one of the third functions called"""
-     messagebox.showinfo("Choice 3", "Well, General Gasket, I think I will train the Stealth Unit, that sounds like it matches my skill set better.")
-     messagebox.showinfo("Choice 3", "Okay, thank you for your dedication to help serve the cause.")
-     messagebox.showinfo("Choice 3", "On the way out you send out a telepathic call to your team members, informing them of a meeting that you would like to hold tomorrow morning, really early, so that you can get to know all of you team members before training starts.")
-     messagebox.showinfo("Choice 3", "
-     choice = simpledialog.askstring("Choose Wisely","You have a choice to pick: 1 or 2. If you pick 1, you choose to command the Stealth Unit; if you pick 2, you chose to command your Current Unit.").strip().lower()[0]
-     stealth2(choice)
-intro()
+    messagebox.showinfo("Choice 3", "Well, General Gasket, I think I will train the Stealth Unit, that sounds like it matches my skill set better.")
+    messagebox.showinfo("Choice 3", "Okay, thank you for your dedication to help serve the cause.")
+    messagebox.showinfo("Choice 3", "On the way out you send out a telepathic call to your team members, informing them of a meeting that you would like to hold tomorrow morning, really early, so that you can get to know all of you team members before training starts.")
+    messagebox.showinfo("Choice 3", "")
+    choice = simpledialog.askstring("Choose Wisely","You have a choice to pick: 1 or 2. If you pick 1, you choose to command the Stealth Unit; if you pick 2, you chose to command your Current Unit.").strip().lower()[0]
+    stealth2(choice)
 
 ################ AJ's Functions #####################
 
