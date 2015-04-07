@@ -80,6 +80,11 @@ def choice1():
         current()
     else:
         choice1()
+def stealth():
+    """one of the third functions called"""
+     messagebox.showinfo("Choice 3", "Well, General Gasket, I think I will train the Stealth Unit, that sounds like it matches my skill set better.")
+     messagebox.showinfo("Choice 3", "Okay, thank you for your dedication to help serve the cause.")
+     messagebox.showinfo("Choice 3", "On the way out you send out a telepathic call to your team members
 intro()
 
 ################ Quinn's Functions #####################
