@@ -3,7 +3,7 @@
 # Description: starter code for the Choose Your
 # Own Adventure Project
 
-# Import Statements
+#Import Statements
 from tkinter import *
 import tkinter.simpledialog
 import tkinter.messagebox
@@ -74,15 +74,18 @@ def intro():
     messagebox.showinfo("Choice 1","I’m okay " +name+ ". But I have something to ask you privately, do you have a second?")
     messagebox.showinfo("Choice 1","Yeah, sure.")
     messagebox.showinfo("Choice 1","You remember all of the thousands of failed rebellions, they were missing something. There’s a small group of us, though we are getting bigger, and we have that something missing. I can’t talk about it out in the open, too dangerous, but I can ask you if you will help us. Will you help us " +name+ "?")
-    choice = simpledialog.askinteger("Choose wisely",
+    choice = simpledialog.askstring("Choose wisely",
                                    "You have a choice to pick: 1 or 2. If you pick 1, you choose to join Zinoviya's army; if you pick 2, you chose to NOT join her army.")
 >>>>>>> 98bd686a2ee437f536b0565dc56509a73b0527fa
     if choice == 1:
         choice1()
     elif choice == 2:
-        #quinn's death function
+        death()
     else:
         intro()
+
+def death():
+    messagebox.showinfo("", "Testing")
 intro()
 
 
