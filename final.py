@@ -30,12 +30,12 @@ def intro():
     choice = simpledialog.askstring("Choose wisely",
                                    "You have a choice to pick: 1 or 2. If you pick 1, you choose to join Zinoviya's army; if you pick 2, you chose to NOT join her army.").strip().lower()[0]
     if choice == "1":
-        choice1()
+        choice1i()
     elif choice == "2":
         death()
     else:
         intro()
-def choice1():
+def choice1i():
     """Second function called, develops the story further, and presents choice of unit command to player"""
     messagebox.showinfo("Choice 2", "Well, I don't know Zinoviya.....")
     messagebox.showinfo("Choice 2", "Oh, come on, you complain just as loudly as I do! You just gotta join! Finally put all of that attitude of yours to the test.")
@@ -76,15 +76,16 @@ def choice1():
     elif choice == "2":
         current()
     else:
-        choice1()
+        choice1i()
 def stealth1():
     """one of the third functions called"""
     messagebox.showinfo("Choice 3", "Well, General Gasket, I think I will train the Stealth Unit, that sounds like it matches my skill set better.")
     messagebox.showinfo("Choice 3", "Okay, thank you for your dedication to help serve the cause.")
     messagebox.showinfo("Choice 3", "On the way out you send out a telepathic call to your team members, informing them of a meeting that you would like to hold tomorrow morning, really early, so that you can get to know all of you team members before training starts.")
-    messagebox.showinfo("Choice 3", "")
-
-    choice = simpledialog.askstring("Choose Wisely","You have a choice to pick: 1 or 2. If you pick 1, you choose to command the Stealth Unit; if you pick 2, you chose to command your Current Unit.").strip().lower()[0]
+    messagebox.showinfo("Choice 3", "Now, six months later, you and your teams have finished training; not normal training, but the kind that turns your entire team into a single person, you all know exactly how the others are going to act, you all know each others weaknesses and strengths, you all know exactly know how to defend each other, work with each other, you have succesfully become one 'Person'")
+    messagebox.showinfo("Choice 3", "You have a 5-man team, including 2 men, Ljubo Dragovic, he's the master telepeth of the group, he is so powerful he can even attack non-telepaths, Javor Gavrilovic, the master telekinetic, he could crush the world if he wanted to (long story), Eliisabet she is the teleportation geek, and could teleport in any circumstance imaginable, and finally Ásta Olvirsson, an Iclandic timecontroller, that is pretty self-explanatory.")
+    messagebox.showinfo("Choice 3", "Flash forward, you are in the enemy base, and have succesfully taken down their defenses when you notice something, they have passive defenses that were previously unknown to the army, now you have a choice.")
+    choice = simpledialog.askstring("Choose Wisely","Your team is tired, but can go on, ").strip().lower()[0]
     stealth2(choice)
 
 ################ AJ's Functions #####################
