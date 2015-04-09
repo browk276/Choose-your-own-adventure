@@ -85,35 +85,34 @@ def stealth1():
     messagebox.showinfo("Choice 3", "Now, six months later, you and your teams have finished training; not normal training, but the kind that turns your entire team into a single person, you all know exactly how the others are going to act, you all know each others weaknesses and strengths, you all know exactly know how to defend each other, work with each other, you have succesfully become one 'Person'")
     messagebox.showinfo("Choice 3", "You have a 5-man team, including 2 men, Ljubo Dragovic, he's the master telepeth of the group, he is so powerful he can even attack non-telepaths, Javor Gavrilovic, the master telekinetic, he could crush the world if he wanted to (long story), Eliisabet she is the teleportation geek, and could teleport in any circumstance imaginable, and finally Ásta Olvirsson, an Iclandic timecontroller, that is pretty self-explanatory.")
     messagebox.showinfo("Choice 3", "Flash forward, you are in the enemy base, and have succesfully taken down their defenses when you notice something, they have passive defenses that were previously unknown to the army, now you have a choice.")
-    choice = simpledialog.askstring("Choose Wisely","Your team is tired, but can go on, ").strip().lower()[0]
+    choice = simpledialog.askstring("Choose Wisely","Your team is tired, but can go on, if you pick '1' you decide to go and deactivate the new defenses, if you pick '2' you chose to turn the problem over to mission command and follow orders, or if you pick '3' you chose to accomplish the armies ultimate goal of assassinating the World President, whose base, the army is  in the process of attacking.").strip().lower()[0]
     stealth2(choice)
 
+def current():
+    """one of the third functions called"""
+    messagebox.showinfo("Choice 3", "Well, General Gasket, I think that my current unit is the best I could be in.")
+    messagebox.showinfo("Choice 3", "Good choice soldier, dismissed.")
+    messagebox.showinfo("Choice 3", "After six months of training you are one of the commanders that form the 3-man team known as mission command. You recieve a report from the Stealth Team, they are informing you that the mission has been compromised, and that the army is currently being surrounded and 'Can't possibly make it out!' What do you order you unit to do?")
+    choice1()
 ################ AJ's Functions #####################
 
 def choice1():
     choice = simpledialog.askinteger("Choose wisely",
-                                     "You must make a decision for you and your unit.  Now you must choose mystery 1 or mystery 2?")
+                                     "You must make a decision for you and your unit.  Now you must choose, 1 is to continue in your efforts to Find and kill the World President, 2 is to order your unit to do as much damage as possible before they die (it is hopeless right?)," + \
+                                     "3 is to turn tail and run, and to try to salvage as much of the army as possible, and 4 is to split up into teams of 3, take evasive maneuvers, and try to be unpredictabe while trying to take out the President anyways.")
     if (choice == 1):
         messagebox.showinfo("Move on the President",
                             "You choose to carry out your mission to kill the president no matter what happens. You Win. THE END")
-
     elif (choice == 2):
         messagebox.showinfo("Total Chaos",
                             "You choose to cause as much destruction as you possilby can before... You Die. THE END")
-    else:
-        choice1()
-
-def choice2():
-    choice = simpledialog.askinteger("Choose wisely",
-                                     "You must make a decision for you and your unit.  Now you must choose tomb 1 or tomb 2.")
-    if (choice == 1):
+    elif (choice == 3):
         messagebox.showinfo("Run Away",
                             "You think the situation is hopeless and you tell your unit to RUN!!! You ALL Die. THE END")
-
-    elif (choice == 2):
+    elif (choice == 4):
         messagebox.showinfo("Split Up",
-                            "You tell your unit to split up into muitiple groups in a last min effort to" + \
-                            " become unpredicable. YOU Live. THE END")
+                            "You tell your unit to split up into muitiple groups in a last ditch effort to" + \
+                            " become unpredicable. YOU Live, but the mission fails. THE END")
     else:
         choice2()
 ################ Quinn's Functions #####################
