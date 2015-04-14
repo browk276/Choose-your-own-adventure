@@ -3,9 +3,7 @@
 # Description: starter code for the Choose Your
 # Own Adventure Project
 
-
-# Import Statements
-
+#Import Statements
 from tkinter import *
 import tkinter.simpledialog
 import tkinter.messagebox
@@ -13,7 +11,6 @@ import tkinter.messagebox
 root = Tk()
 w = Label(root, text="Choose Your Own Adventure")
 w.pack()
-
 name = simpledialog.askstring("Name?","What's your name?")
 ################ Ken's Functions #####################
 def intro():
@@ -82,59 +79,21 @@ def choice1():
         choice1()
 def stealth1():
     """one of the third functions called"""
-    messagebox.showinfo("Choice 3", "Well, General Gasket, I think I will train the Stealth Unit, that sounds like it matches my skill set better.")
-    messagebox.showinfo("Choice 3", "Okay, thank you for your dedication to help serve the cause.")
-    messagebox.showinfo("Choice 3", "On the way out you send out a telepathic call to your team members, informing them of a meeting that you would like to hold tomorrow morning, really early, so that you can get to know all of you team members before training starts.")
-    choice = simpledialog.askstring("Choose Wisely","You have a choice to pick: 1 or 2. If you pick 1, you choose to command the Stealth Unit; if you pick 2, you chose to command your Current Unit.").strip().lower()[0]
-    stealth2(choice)
+     messagebox.showinfo("Choice 3", "Well, General Gasket, I think I will train the Stealth Unit, that sounds like it matches my skill set better.")
+     messagebox.showinfo("Choice 3", "Okay, thank you for your dedication to help serve the cause.")
+     messagebox.showinfo("Choice 3", "On the way out you send out a telepathic call to your team members, informing them of a meeting that you would like to hold tomorrow morning, really early, so that you can get to know all of you team members before training starts.")
+     messagebox.showinfo("Choice 3", "
+     choice = simpledialog.askstring("Choose Wisely","You have a choice to pick: 1 or 2. If you pick 1, you choose to command the Stealth Unit; if you pick 2, you chose to command your Current Unit.").strip().lower()[0]
+     stealth2(choice)
+intro()
 
 ################ AJ's Functions #####################
 
-def choice1():
-    choice = simpledialog.askinteger("Choose wisely",
-                                     "You must make a decision for you and your unit.  Now you must choose mystery 1 or mystery 2?")
-    if (choice == 1):
-        messagebox.showinfo("Move on the President",
-                            "You choose to carry out your mission to kill the president no matter what happens. You Win. THE END")
 
-    elif (choice == 2):
-        messagebox.showinfo("Total Chaos",
-                            "You choose to cause as much destruction as you possilby can before... You Die. THE END")
-    else:
-        choice1()
 
-def choice2():
-    choice = simpledialog.askinteger("Choose wisely",
-                                     "You must make a decision for you and your unit.  Now you must choose tomb 1 or tomb 2.")
-    if (choice == 1):
-        messagebox.showinfo("Run Away",
-                            "You think the situation is hopeless and you tell your unit to RUN!!! You ALL Die. THE END")
 
-    elif (choice == 2):
-        messagebox.showinfo("Split Up",
-                            "You tell your unit to split up into muitiple groups in a last min effort to" + \
-                            " become unpredicable. YOU Live. THE END")
-    else:
-        choice2()
 ################ Quinn's Functions #####################
-def ending1():
-    messagebox.showinfo("YOU FAIL!", "You reject your friend's offer, and thier mission fails. You are oppressed until the end of your days.")
-def stealth2(choice):
-    if (choice == "1"):
-        messagebox.showinfo("YOU FAIL!",
-                            "You chose to try and eliminate the cause of the problem. You and your unit die with honor, sacrificing yourselves so the army can survive. YOU FAIL!")
-    elif (choice == "2"):
-        messagebox.showinfo("YOU FAIL!",
-                            "You chose to report the problem to command. The army turns tail, leaving itself open. It is completely destroyed on the march out.  YOU FAIL!")
-    elif (choice == "3"):
-        messagebox.showinfo("YOU WIN!",
-                            "You chose to split off and complete the mission objective on your own. You sneak past the enemey forces and assassinate the President. YOU WIN!")
-    else:
-        choice = simpledialog.askstring("Choose wisely", "You choose to take command of the stealth unit. You train for 6 months. In the middle of battle, the plan falls apart due to an unforseen element, and you are presented witha choice. 1) You can try to find and elminate the cause of the problem. 2) You can report the problem to command. 3) Your team can split off and complete the mission objective on their own. ")
-        stealth2(choice)
 
 
 ################ Main #####################
-intro()
-
 root.destroy()
