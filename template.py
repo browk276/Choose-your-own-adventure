@@ -53,6 +53,7 @@ def choice2():
     else:
         choice2()
 ################ Ken's Functions #####################
+
 def intro():
     # note to self ask for their name
     """ Introductory Function -> starts the story going """
@@ -66,7 +67,6 @@ def intro():
 def death():
     messagebox.showinfo("", "Testing")
 intro()
-
 
 
 
