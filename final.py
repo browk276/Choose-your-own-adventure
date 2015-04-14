@@ -35,7 +35,7 @@ def intro():
     if choice == "1":
         choice1i()
     elif choice == "2":
-        death()
+        ending1()
     else:
         intro()
 def choice1i():
