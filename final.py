@@ -75,7 +75,7 @@ def choice1i():
     messagebox.showinfo("Choice 2", "Will you command the Stealth Unit, or you Current unit? The Stealth Unit will be sneaking into the base and sabotaging the enemies response capabilities, if you choose to take command of your Current Unit, you will be the leader of 50 Infantrymen.")
     choice = simpledialog.askstring("Choose Wisely","You have a choice to pick: 1 or 2. If you pick 1, you choose to command the Stealth Unit; if you pick 2, you chose to command your Current Unit.").strip().lower()[0]
     if choice == "1":
-        stealth()
+        stealth1()
     elif choice == "2":
         current()
     else:
